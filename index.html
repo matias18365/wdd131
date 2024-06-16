@@ -1,24 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131: Dynamic Web Fundamentals - Matias Gutierrez</title>
+    <meta name="description" content="This a page that shows a little about my self and shows my skills on the html, css and javascript">
+    <meta name="author" content="Matias Gutierrez">
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
         <h1 contenteditable>WDD 131: Dynamic Web Fundamentals - Matias Gutierrez</h1>
+        <nav class="navigation modern">
+            <a href="www.linkedin.com/in/matíasgutiérrezalbarracin" title="LinkedIn">LinkedIn</a>
+            <a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27" title="Scripture">Scripture</a>
+            <a href="#" title="Final Project">Final Project</a>
+        </nav>
     </header>
-    <nav class="navigation modern">
-        <a href="#" title="LinkedIn">LinkedIn</a>
-        <a href="#" title="I-Learn">I-Learn</a>
-        <a href="#" title="Scripture">Scripture</a>
-        <a href="#" title="Final Project">Final Project</a>
-    </nav>
-    <main contenteditable>About Me</main>
-    <div class="aside-content" contenteditable>Web Dev Resources</div>
-    <footer contenteditable>&copy;2024 🔥 Matias Gutierrez Albarracin 🔥 Santa Cruz
+    <main>
+    <section class="card">
+        <p>My name is Matias</p>
+    </section>
+    <section class="card">
+        <div class="aside-content" contenteditable>Hyundai i10</div>
+    </section>
+    </main>
+    <footer> 
+        <p>&copy;<span id="currentyear"></span> 🔥 Matias Gutierrez Albarracin 🔥 Santa Cruz</p>
         <p>Last Modification 6/15/2024 11:42:10</p>
     </footer>
 </body>
