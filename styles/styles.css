@@ -9,6 +9,7 @@ header {
     padding: 2rem;
     grid-column: 1 / 5;
     color: #eee;
+	text-align: center;
 }
 
 main {
