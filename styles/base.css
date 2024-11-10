@@ -11,7 +11,7 @@ body {
     --primary-color: #080101;
     --secondary-color: #333;
     --accent1-color: #d1b32d;
-    --accent2-color: #505e35;
+    --accent2-color: #498a8f;
 
     --heading-font: 'Roboto', serif;
     --paragraph-font: 'Roboto', serif;
@@ -139,9 +139,26 @@ main {
 
 
 .card2 {
-    background: #505e35;
-    color: #fff
+    background: var(--accent2-color);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
 }
+
+.card2 h2 {
+    margin-bottom: 16rem;
+}
+
+.card2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card2 li {
+    margin: 0.5rem 0;
+}
+
 
 footer {
     grid-row: 3 / 4;
