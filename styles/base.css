@@ -36,8 +36,8 @@ h1 {
 .navigation ul {
     display: flex;
     list-style: none;
-    gap: 160px;
-    padding: 1;
+    gap: 150px;
+    padding: 0.10rem;
 }
 .navigation li {
 	flex: 1 1 auto;
