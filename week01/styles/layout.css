@@ -52,8 +52,9 @@ footer {
 .navigation {
     grid-column: 1 / 5;
     grid-row: 2 / 3;
+    display: flex;
 	list-style: none;
-	display: flex;
+    justify-content: center;
 	background-color: #333;
 	align-items: center;
 }
