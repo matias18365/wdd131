@@ -1,10 +1,4 @@
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    max-height: 1080px;
-    padding: 20px;
-}
 :root {
     --primary-color: #080101;
     --secondary-color: #333;
@@ -27,8 +21,10 @@ h1, h2, p{
 
 
 body {
+    font-family: var(--paragraph-font);
     display: grid;
     max-width: 1600px;
+    max-height: 1080px;
     grid-template-rows: auto 1fr auto;
     margin: 0 auto;
     align-items: center;
