@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     lastModifiedSpan.innerText = document.lastModified;
 });
 
+//This is for the menu button.
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
