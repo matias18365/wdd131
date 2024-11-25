@@ -7,3 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const lastModifiedSpan = document.querySelector('#lastModified');
     lastModifiedSpan.innerText = document.lastModified;
 });
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
