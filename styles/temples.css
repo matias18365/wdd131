@@ -35,7 +35,7 @@ nav {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: #ffffff;
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -65,8 +65,8 @@ nav {
 	color: #fff;
 }
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
+    background-color: #555; /* Darker gray */
+    color: #ffffff; /* Keep white text for better readability */
 	font-weight: 700;
 }
 
@@ -142,12 +142,12 @@ figcaption {
 }
 
 h3 {
-    color: #333;
+    color: #585858;
     margin: 0.5rem 0;
 }
 
 p {
-    color: #555;
+    color: #333;
     margin: 0;
 }
 
