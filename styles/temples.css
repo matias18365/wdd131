@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background: #356098;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background: #505b69;
+}
+h1 {
+    color: #eee;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+
+footer {
+    grid-row: 3 / 4;
+    background: #356098;
+    padding: 1rem;
+    text-align: center;
+    color: #eee;
+    font-size: 1rem;
+}
+
+footer p {
+    color: #fff;
+}
+
+.highlight {
+	color: navy;
+	font-weight: 700;
+	font-family: hebrew;
+}
