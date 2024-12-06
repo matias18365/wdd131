@@ -118,11 +118,7 @@ main {
     margin-left: 8px;
 }
 
-@media (min-width: 600px) {
-    .weather-icon {
-        display: none;
-    }
-}
+
 
 figcaption {
     padding: 0.1rem;
