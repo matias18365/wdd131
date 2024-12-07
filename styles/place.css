@@ -1,3 +1,17 @@
+:root {
+    --primary-color: #d52b1e;
+    --secondary-color: #ffb300;
+    --accent1-color: #009e49;
+    --accent2-color: #333;
+
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto', serif;
+
+    --nav-background-color: #d52b1e;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #ffb300;
+    --nav-hover-background-color: rgba(255, 179, 0, 0.3);
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -18,13 +32,24 @@ header {
     color: #eee;
     text-align: center;
     padding: 1rem;
-    background: #d52b1e;
+    background-color: var(--primary-color);
 }
 
 header h1 {
     color: #fff;
 }
+nav {
+    background-color: var(--nav-background-color);
+}
 
+nav a {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
 
 main {
     display: flex;
@@ -109,7 +134,7 @@ p {
 }
 
 footer {
-    background: #009e49;
+    background-color: var(--accent1-color);
     padding: 1rem;
     text-align: center;
     color: #eee;
