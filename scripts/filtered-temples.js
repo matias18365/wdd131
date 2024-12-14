@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     lastModifiedSpan.innerText = document.lastModified;
 });
 
-//This is for the menu button.
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -99,3 +98,44 @@ const temples = [
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
     ];
+
+const gallery = document.querySelector('.gallery');
+
+
+temples.forEach(temple => {
+    
+
+    const templeCard = document.createElement('figure');
+    templeCard.classList.add('gallery-item');
+
+
+    const templeName = document.createElement('h3');
+    templeName.textContent = temple.templeName;
+
+
+    const templeLocation = document.createElement('p');
+    templeLocation.textContent = `Location: ${temple.location}`;
+
+
+    const templeDedicated = document.createElement('p');
+    templeDedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+
+    const templeArea = document.createElement('p');
+    templeArea.textContent = `Area: ${temple.area.toLocaleString()} sq ft`; // Format numbers with commas
+
+
+    const templeImage = document.createElement('img');
+    templeImage.src = temple.imageUrl;
+    templeImage.alt = temple.templeName;
+    templeImage.loading = 'lazy';
+
+
+    templeCard.appendChild(templeName);
+    templeCard.appendChild(templeLocation);
+    templeCard.appendChild(templeDedicated);
+    templeCard.appendChild(templeArea);
+    templeCard.appendChild(templeImage);
+    
+    gallery.appendChild(templeCard);
+});
