@@ -59,7 +59,8 @@ h1, h2 {
 }
 
 .artist-card img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -108,9 +109,11 @@ button:hover {
     .artist-grid {
         display: grid;
         grid-template-columns: 1fr;
-        align-items: center;
+        padding: 10px;
     }
     .artist-card {
-        max-width: 300px;
+        max-width: 90%;
+        margin: 5px auto;
+        padding: 10px;
     }
 }

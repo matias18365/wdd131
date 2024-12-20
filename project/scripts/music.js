@@ -9,21 +9,36 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-const recommendations = [
-    { title: "A Tear in Space", artist: "Glass Animals" },
-    { title: "What Was I Made For?", artist: "Billie Eilish" },
-    { title: "You & Me - Flume Remix", artist: "Flume" },
-];
+document.addEventListener("DOMContentLoaded", function() {
 
+    const recommendations = [
+        { title: "A Tear in Space", artist: "Glass Animals" },
+        { title: "What Was I Made For?", artist: "Billie Eilish" },
+        { title: "You & Me - Flume Remix", artist: "Flume" },
+        { title: "Creatures in Heaven", artist: "Glass Animals" },
+        { title: "Bored", artist: "Billie Eilish" },
+        { title: "Never Be Like You", artist: "Flume" },
+        { title: "The Other Side of the Paradise", artist: "Glass Animals" },
+        { title: "Getting Older", artist: "Billie Eilish" },
+        { title: "Drop the Game", artist: "Flume" },
+        { title: "Helium", artist: "Glass Animals" },
+        { title: "Blue", artist: "Billie Eilish" },
+        { title: "The Difference", artist: "Flume" },
+    ];
 
-function displayRecommendations() {
-    const recommendationList = document.getElementById("recommendation-list");
-    recommendations.forEach(item => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${item.title} by ${item.artist}`;
-        recommendationList.appendChild(listItem);
-    });
-}
+    function displayRecommendations() {
+        const recommendationList = document.getElementById("recommendation-list");
+        if (recommendationList) {
+            recommendations.forEach(item => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${item.title} by ${item.artist}`;
+                recommendationList.appendChild(listItem);
+            });
+        }
+    }
+
+    displayRecommendations();
+});
 
 
 document.getElementById("contact-form").addEventListener("submit", function(event) {
