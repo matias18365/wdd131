@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #2980b9;
+    --secondary-color: #2ecc71;
+    --accent1-color: #d1b32d;
+    --accent2-color: #498a8f;
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto', serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+.artist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.artist-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 500px;
+}
+
+.artist-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    grid-row: 3 / 4;
+    background: #2980b9;
+    padding: 1rem;
+    text-align: center;
+    color: #eee;
+    font-size: 1rem;
+}
+
+footer p {
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+}
+
+@media (max-width: 600px) {
+    .artist-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .artist-card {
+        max-width: 300px;
+    }
+}
